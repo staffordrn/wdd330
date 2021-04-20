@@ -1,0 +1,33 @@
+
+*  { 
+    margin: 0; 
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: #2e2e2e;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+.title {
+    font-size: 3em;
+}
+h2 {
+    font-size: 1.5rem;
+}
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 75%;
+}
+header, footer, footer a {
+    text-align: center;background-color: #170042;
+    color: whitesmoke;
+}
+footer {
+    font-size: 1em;
+}
