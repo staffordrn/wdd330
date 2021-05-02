@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Team Activity Week 2">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Team Activity - Week 2</h1>
+        <h2>Renada Stafford</h2>
+    </header>
+    <main>
+    <!-- CORE 1 -->
+    <div id="step1" class="box">
+      <input type="text" id="input1" placeholder="type something here" >
+      <button type="button" onclick="doTheThing()" class="button">Do the thing!</button>
+      <div id="output1">
+      </div>
+    </div>
+
+    <!-- CORE 2 -->
+    <div id="step2">
+      <input type="number" id="input2">
+      <button type="button" onclick="numberSum()" class="button">Add up the Digits!</button>
+      <div id="output2">
+      </div>
+    </div> 
+
+    <!-- CORE 3  -->
+    <div id="step3">
+      <input type="number" id="input3">
+      <button type="button" onclick="addMachine()" class="button">Get That Total!</button>
+      <div id="output3">
+      </div>
+
+    <!-- stretch goals -->
+
+    <!-- stretch 1 function definitions-->
+    <div id="stretch1">
+      <h3>Calculator</h3>
+      <input type="number" id="input4">
+      <input type="number" id="input5">
+      <button type="button" onclick="calcAdd()" class="button">Add!</button>
+      <button type="button" onclick="calcSub()" class="button">Subtract!</button>
+      <button type="button" onclick="calcMult()" class="button">Multiply!</button>
+      <div id="output4">
+      </div>
+    </div> 
+
+    <!-- stretch 2 DRY code-->
+    <div id="stretch2">
+      <h3>Calculator</h3>
+      <input type="number" id="input6">
+      <input type="number" id="input7">
+      <button type="button" onclick="calc2('add')" class="button">Add!</button>
+      <button type="button" onclick="calc2('subtract')" class="button">Subtract!</button>
+      <button type="button" onclick="calc2('multiply')" class="button">Multiply!</button>
+      <div id="output5">
+      </div>
+    </div>
+    </main>
+    <footer>
+        <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+    </footer>
+</body>
+<script>
+// CORE 1
+function doTheThing() {
+let input = document.getElementById("input1").value;
+document.getElementById('output1').innerHTML = input;
+}
+
+// CORE 2
+function numberSum()  {
+let num = document.getElementById("input2").value;
+let numbers = 0;
+        for(let i = 1; i <= num; i++) {
+            numbers += i;
+        }
+        document.getElementById('output2').innerHTML = numbers;
+}
+
+// CORE 3
+function addMachine()  {
+  let a = parseInt(document.getElementById("input3").value);
+  let b = parseInt(document.getElementById("input2").value);
+  document.getElementById('output3').innerHTML = a + b;
+  }
+
+
+//stretch 1 - function definitions
+
+const val1 = parseInt(document.getElementById("input4").value);
+const val2 = parseInt(document.getElementById("input5").value);
+console.log(val1, val2);
+
+
+// function declaration
+function calcAdd() {
+console.log(val1, val2);
+  document.getElementById('output4').innerHTML = val1 + val2;
+}
+
+// function expression
+function calcSub(val1, val2) {
+  const sub = function(val1, val2) {
+  subtract = val1 - val2;
+  }
+  document.getElementById('output4').innerHTML = sub;
+}
+
+// arrow function
+
+function calcMult(val1, val2) {
+  const mult = () => val1 * val2;
+  document.getElementById('output4').innerHTML = mult;
+}
+//a function to run the calculation
+
+
+
+// stretch 2: DRY code
+
+function calc2(calc) {
+  const val1 = parseInt(document.getElementById("input6").value);
+  const val2 = parseInt(document.getElementById("input7").value);
+  const output = document.getElementById('output5')
+  switch (calc) {
+    case 'multiply': 
+      output.innerHTML = val1 * val2;
+    break;
+    case 'divide': 
+      output.innerHTML = val1 / val2;
+    break;
+    case 'add': 
+      output.innerHTML = val1 + val2;
+    break;
+    case 'subtract': 
+      output.innerHTML = val1 - val2;
+    break;
+  }
+
+}
+</script>
+</html>

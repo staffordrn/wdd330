@@ -24,6 +24,13 @@ header, main, footer {
     padding: .5rem;
     max-width: 75%;
 }
+.game {
+    color: white;
+    background: lightslategray;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 5px;
+}
 header, footer, footer a {
     text-align: center;background-color: #170042;
     color: whitesmoke;

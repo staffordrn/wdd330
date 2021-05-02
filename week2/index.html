@@ -1,0 +1,560 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="../js/main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+    <header>
+        <!-- <img src="profile-image-small.jpg" alt="Renada Stafford Profile Image"> -->
+        <h1>Renada Stafford - Week 2</h1>
+    </header>
+    <main>
+
+      <section> <!-- quiz ninja project-->
+        <h1 class="title">Quiz Ninja Project</h1>
+        <div id="game" class="game"> 
+          <h3>Would you like to play a game?</h3>
+          <button type="button" onclick="quizNinjaGame()" class="button">Yes, let's play!</button>
+        </div>
+        
+
+
+
+      </section> 
+
+      <hr>
+
+      <section> <!-- team activity code link -->
+        <h1><a href="team-activity.html">Week 2 Team Activity</a></h1>
+      </section>
+      
+      <hr>
+       
+      <section> <!-- notes -->
+          <h1 class="title">Week 2 Notes</h1>
+          <h1><span style="font-weight: 400;">Chapter 2: Programming Basics</span></h1>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Comments</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Help explain whats going on</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">&ldquo;Hallmark of a ninja programmer&rdquo;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">// - single line comments</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">/* multiple line comment */</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">JavaScript Grammar</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">JS syntax = C style syntax due to similarities to C language</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">JS doesn&rsquo;t require ; at end of line but do it anyway</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Best Practice: statements start on a new line and end with ;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Reserved words</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can&rsquo;t be used as variables, object properties, or function parameters</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Undefined, NaN, and Infinity are not reserved words but should be</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Primitive data types</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">String</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Symbol</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Number</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Boolean</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Undefined</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Null</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Variables</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Must be declared before they can be used</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Refer to a value stored in memory</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use const if the value should not change</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use let if value could be reassigned</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use assignment operator (=) to assign value</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Assign multiple values at once - separate with commas</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Making an object a constant does not prevent the data within the object from changing</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">What happened to &lsquo;var&rsquo;?</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Let &amp; const have block scope, var does not*</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Let &amp; const help prevent overwriting built in methods</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Var can still be used but don&rsquo;t</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">* block scope = variable only exists in the block it is declared in</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Scope</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Declared outside block = global scope</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Declared in a block = only available to the block</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Keep global variables to a minimum</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Naming Constants and variables</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Sensible, meaningful names</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Start with lowercase letter, _, or $</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Variable names are case sensitive</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use camelCase</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Direct Assignment and Assignment by Reference</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Direct: a = 1, b = 2&hellip;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">By reference: changes made to an object affect all variables that refer to the object.</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Strings</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Create using single quotes (&lsquo;&rsquo;), double quotes (&ldquo;&rdquo;), or backtick (`)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use escape character to allow apostrophe, quotes, etc</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">String Properties and methods</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Properties = info about object or value</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Methods = perform action on object or value</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Dot and bracket notation for methods:&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">data.method() - dot</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">data [&lsquo;property&rsquo;] - bracket</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Concatenation:&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">concat()</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">+ operator</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Template literals - special strings created using the backtick character</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">&nbsp;don't need escape for (&lsquo;) or (&ldquo;)&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Allows for JS code interpolation</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Uses ${value}</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">&nbsp;ex const name = &lsquo;Bob&rsquo;; `Hello ${ name}, it&rsquo;s me`;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Symbols = new primitive value</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Created using Symbol() function</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">For creating unique values</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Add description inside ()</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Mainly used for object property keys</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Numbers</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Integers for floats</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Number Methods</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Dot notation</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">2 dots - 5..toExponential();</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Space before dot - 5 .toExponential();</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Changing variable values</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">a = a + 5 or a += 5</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Incrementing&nbsp; ++, --</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">All the usual arithmetic operations can be done in JS</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Infinity and NaN</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Infinity - special error for numbers too big or small for JS</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">NaN - result when operation returns non-numerical result</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Type Coercion</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">JS will try to force non-matching types to match</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Often produces errors</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Best practice - be as explicit as possible about data type</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Converting between string and number</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Number() = string&rarr; number</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">String() = number &rarr; string</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">toString() = number &rarr; string</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">parseInt() = string&rarr; number</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">parseFloat = string&rarr; decimal</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Undefined = variable not assigned a value</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Null = no value (acts like 0 in operations)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Booleans = true or false</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Logical operators</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">! = not</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">&amp;&amp; = and</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">|| =&nbsp; or</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Equality operators</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">== soft equality (no date type check)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">=== hard equality (checks data type)</span></li>
+          </ul>
+          </ul>
+          <p><br /><br /></p>
+          <h1><span style="font-weight: 400;">Chapter 3: Arrays, Logic, and Loops</span></h1>
+          <p>&nbsp;</p>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Array - an ordered list of values</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To create empty array - </span><span style="font-weight: 400;">const heroes = [];</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To create and populate an array - </span><span style="font-weight: 400;">const avengers = ['Captain America', 'Iron Man', 'Thor', 'Hulk']; </span><span style="font-weight: 400;">(array literal)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Assign single values - use index: </span><span style="font-weight: 400;">avengers[2] = 'Ant Man';</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Items in arrays can be treated like variables</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Delete array value</span><span style="font-weight: 400;"> - delete avengers[3];</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Arrays can hold values of different data types</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Array Properties and Methods</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">array.length()</span><span style="font-weight: 400;"> - returns array length and can also define array length</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">array.pop() </span><span style="font-weight: 400;">- removes the last item from the array</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">array.shift() </span><span style="font-weight: 400;">- removes the first item from the array</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">array.push() </span><span style="font-weight: 400;">- appends a value to the end</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">array.unshift()</span><span style="font-weight: 400;"> - appends a value to the beginning</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Merging Arrays</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">concat()</span><span style="font-weight: 400;"> merges two arrays but does not change the original arrays</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">myArray = myArray.concat([&lsquo;array&rsquo;, &lsquo;values&rsquo;])</span><span style="font-weight: 400;"> changes the original array and adds the new values</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">The spread operator can merge arrays too - </span><span style="font-weight: 400;">myArray = [...myArray, ...[&lsquo;array&rsquo;, &lsquo;values&rsquo;]</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">join()</span><span style="font-weight: 400;"> - turns the array into a comma separated string</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">slice()</span><span style="font-weight: 400;"> - creates a sub-array out of a section of an array</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Doesn&rsquo;t remove anything out of the original array</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">splice()</span><span style="font-weight: 400;"> - removes items and inserts their items in their place</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">reverse()</span><span style="font-weight: 400;"> - reverses the array order</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">sort()</span><span style="font-weight: 400;"> - sorts the items alphabetically (numerical character strings too)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">indexOf()</span><span style="font-weight: 400;"> - returns the index of an item</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">includes()</span><span style="font-weight: 400;"> - returns a boolean (t/f) if an item is in the array</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Multidimensional arrays = arrays of arrays</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Good for coordinates</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Spread operator is used to flatten multidimensional arrays - essentially combines all arrays so the nested levels are all in one array</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Set - a list of unique values (no duplicates). Currently no literal notation</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Create and empty set - </span><span style="font-weight: 400;">const list = new Set();</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Adding values to sets - use the add() method</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">list.add(2).add(3).add(4);</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Add at creation - </span><span style="font-weight: 400;">const numbers = new Set([1,2,3]);</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Characters in a string are added as separate values unless you use the add() function.</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const letters = new Set('hello'); &rarr; { 'h', 'e', 'l', 'o' }&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const words = new Set().add('hello').add('world') &rarr; {'hello', 'world'}</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Duplicates are ignored</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Non-primitive values are considered unique (arrays, objects, etc)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Methods</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">setName.size()</span><span style="font-weight: 400;"> - finds the number of values in a set</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">setName.has()</span><span style="font-weight: 400;"> - checks if a value is in a set</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Returns a boolean</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Removing values from sets</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">setName.delete()</span><span style="font-weight: 400;"> - removes a value from a set</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">setName.clear()</span><span style="font-weight: 400;"> -&nbsp; removes all values from a set</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Converting to Arrays</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use the spread operator (...) to convert a set to an array</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const myArray = [...mySet];</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can also use the Array.from() method</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const myArray = Array.from(mySet);&nbsp;</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Weak sets</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Objects are stored in sets as long as the set exists</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can cause memory leak - when a program retains references to values that can no longer be accessed in memory. ()dead objects)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Wastes resources</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Weak sets allow &ldquo;garbage collecting&rdquo; references to &ldquo;dead objects&rdquo;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To create - </span><span style="font-weight: 400;">const weak = new WeakSet();&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Only non-primitive data types can be added to these sets</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Maps</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">A way of keeping key/value pairs</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Similar to objects with these differences:</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Objects use strings for key values, keys can use any data type</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">No good way to find number of key/value pairs for objects but maps can use the </span><span style="font-weight: 400;">size </span><span style="font-weight: 400;">property</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Objects have methods and prototypes to create chain of inheritance but maps are focused on storing and retrieving key/value pairs.</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Object property values can be accessed directly but maps make you use the </span><span style="font-weight: 400;">get()</span><span style="font-weight: 400;"> method.</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To create a map - </span><span style="font-weight: 400;">const romanNumerals = new Map();</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To add key/value pair to map - </span><span style="font-weight: 400;">romanNumerals.set(1,'I');</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">&ldquo;Hash rocket&rdquo; symbol used to display key/value pairs (=&gt;)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">{1 =&gt; &lsquo;I&rsquo;}</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Add multiple values -using the</span><span style="font-weight: 400;"> set() </span><span style="font-weight: 400;">method </span><span style="font-weight: 400;">romanNumerals.set(2,'II').set(3,'III').set(4,'IV').set(5,'V')&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Methods</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use </span><span style="font-weight: 400;">get()</span><span style="font-weight: 400;"> to look up a value using the key</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use </span><span style="font-weight: 400;">has()</span><span style="font-weight: 400;"> to see if a key is in a map&nbsp;&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Create a map with multiple values using a nested array as a parameter - </span><span style="font-weight: 400;">const heroes = new Map([ ['Clark Kent','Superman'], ['Bruce Wayne', 'Batman'] ]);&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use the size property to find the number of key/value pairs -&nbsp;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Removing entries from maps</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">mapName.delete()</span><span style="font-weight: 400;"> - delete a key/value pair.&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Returns a boolean if it worked</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">mapName.clear()</span><span style="font-weight: 400;"> - removes all key/value pairs from a map</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Converting maps to arrays</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Maps convert to nested arrays of key/value pairs</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use spread operator (...)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">[...romanNumerals] &rarr; [ [1,'I'], [2,'II'], [3, 'III'], [4,'IV'], [5,'V'] ]&nbsp;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Or use the Array.from() method</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Array.from(romanNumerals) &rarr; [ [1,'I'], [2,'II'], [3, 'III'], [4,'IV'], [5,'V'] ]</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Weak maps and sets - good for optimizing memory and avoiding leaks but can&rsquo;t use all the methods that the regular maps and sets can.</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Logic - allows you to control the flow of the program</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">if</span><span style="font-weight: 400;"> statements</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">if (condition) { // code to run if condition is true }&nbsp;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">else</span><span style="font-weight: 400;"> statements - comes after the if statement and gives code to run if the condition is false</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">if (condition) { // code to run if condition is true } else { // code to run if condition is false }</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Ternary operator - shorthand for writing if statement (?)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">condition ? (//code to run if condition is true) : (//code ➥ to run if condition is false</span><span style="font-weight: 400;">)&nbsp;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can make code easier to write but harder to read</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">switch</span><span style="font-weight: 400;"> statements - use when there are lots of conditions to test</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - switch(valueToCompare)</span></li>
+          </ul>
+          </ul>
+          </ul>
+          <p><span style="font-weight: 400;">case value1: code to execute if the case occurs;</span></p>
+          <p><span style="font-weight: 400;">break;</span></p>
+          <p><span style="font-weight: 400;">case value1: code to execute if the case occurs;</span></p>
+          <p><span style="font-weight: 400;">break;</span></p>
+          <p><span style="font-weight: 400;">default: code to execute if nothing above occurs;</span></p>
+          <p><span style="font-weight: 400;">Break;</span></p>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Loops - repeat a piece of code over and over</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">while</span><span style="font-weight: 400;"> loops - runs a block of code while a condition is true</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">while (condition) { // do something }&nbsp;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Infinite loop -&nbsp; a situation where the condition of a loop is never met and the loop runs indefinitely</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">do...while</span><span style="font-weight: 400;"> loops - similar to </span><span style="font-weight: 400;">while</span><span style="font-weight: 400;"> loops but the condition comes after the block of code.</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">do</span><span style="font-weight: 400;">...</span><span style="font-weight: 400;">while</span><span style="font-weight: 400;"> loops will always run at least once.</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - do { do something } while(condition)</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">for</span><span style="font-weight: 400;"> loops - commonly used type of loop</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - for (initialization ; condition ; after) { do something }</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Initialization - a variable is initialized to use in the loop</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Condition - needs to be satisfied for the loop to continue</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">After - what happens after each iteration of the loop</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Nested </span><span style="font-weight: 400;">for</span><span style="font-weight: 400;"> loops - a loop inside a loop</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Inner loop runs completely before the next step of the outer loop runs</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">for</span><span style="font-weight: 400;"> loops can be used to iterate over array values</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">for(let i=0, max=avengers.length; i &lt; max; i++){ console.log(avengers[i]);&nbsp;</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">For-of </span><span style="font-weight: 400;">loop (for arrays)&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">for(const value of avengers){}</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">The variable</span><span style="font-weight: 400;"> value </span><span style="font-weight: 400;">needs to be declared as </span><span style="font-weight: 400;">const</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Looping over sets and maps</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use </span><span style="font-weight: 400;">for-of</span><span style="font-weight: 400;"> loop to loop over values in a set or key/value pairs in a map</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Loops go over the values in the order they were added</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use </span><span style="font-weight: 400;">keys()</span><span style="font-weight: 400;"> method for keys and </span><span style="font-weight: 400;">values()</span><span style="font-weight: 400;"> method for values</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">for(const key of romanNumerals.keys()){}</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">for(const value of RomanNumerals.values()){}</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use </span><span style="font-weight: 400;">entries()</span><span style="font-weight: 400;"> method for both key and value</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">for(const [key,value] of RomanNumerals.entries()) { console.log(`${key} in Roman numerals is ${value}`); }</span><span style="font-weight: 400;">&nbsp;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can&rsquo;t loop over values in weak sets and weak maps</span></li>
+          </ul>
+          </ul>
+          </ul>
+          <h1><span style="font-weight: 400;">Chapter 4: Functions</span></h1>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Function - a piece of code referenced by a name</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Like a self-contained mini program</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Reduces repetition &amp; makes code easier to follow</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Functions are first class objects - they behave like all other primitive data types and objects</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Defining a function</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Declaration&nbsp; - creates a function literal</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure - </span><span style="font-weight: 400;">&nbsp;function functionName() {code to be executed...}</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Expression - assigns a function to a variable (names or unnamed)</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const goodbye = function bye() {code to be executed...}&nbsp; </span><span style="font-weight: 400;">OR</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const goodbye = function() {code to be executed...};</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">NOTE: this needs a semicolon at the end b/c it is the end of a statement.</span></li>
+          </ul>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Constructors - not recommended because of problems that arise from the method of construction and they have global scope</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure -</span><span style="font-weight: 400;"> const hi = new Function('console.log("Hi World!");');&nbsp;</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Invoking a function - to invoke call its name followed by ()</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">DRY code - </span><span style="font-weight: 400;">D</span><span style="font-weight: 400;">on&rsquo;t </span><span style="font-weight: 400;">R</span><span style="font-weight: 400;">epeat </span><span style="font-weight: 400;">Y</span><span style="font-weight: 400;">ourself</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Every part of a program should only be written once</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Ex. write a function once the simply invoke it when needed</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Return values - use the return keyword to define what is to be returned from a function</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Parameters and Arguments - values given to functions for input</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Parameter - set when the function is defined (placeholders)</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Argument - passed to a function when it&rsquo;s invoked</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Arguments variable - special variable for functions</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Returns arguments passed to function as an object</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use the</span><span style="font-weight: 400;"> rest</span><span style="font-weight: 400;"> operator to create an array of arguments</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">To use - place &hellip; in front of the last parameter in the declaration</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can be used to improve the </span><span style="font-weight: 400;">mean()</span><span style="font-weight: 400;"> function</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Default Parameters - values used by functyions if no arguments are provided</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Assign default value in function definition -&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Ex: </span><span style="font-weight: 400;">function hello(name='World') { console.log(`Hello ${name}!); }</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Call this function w/o argument = Hello World</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Call this function with &ldquo;Universe&rdquo; argument = Hello Universe</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Always place default parameters last!</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Arrow Functions</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Identified by =&gt;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Structure </span><span style="font-weight: 400;">= x=&gt; x*x</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Always anonymous</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Parameters before arrow, main body after</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Assign to variable if you want reference</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">const square = = x=&gt; x*x</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Advantages</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Less verbose</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Single parameters needs no ()</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Function body doesn&rsquo;t need to be in block if its only one line</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Return keyword not required if only one statement</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">They don&rsquo;t bind their value to of</span><span style="font-weight: 400;"> this</span><span style="font-weight: 400;"> to the function</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Best for short anonymous functions</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Multiple parameters -</span><span style="font-weight: 400;"> const add = (x,y) =&gt; x + y;</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">No parameters</span><span style="font-weight: 400;"> const add = (x,y) =&gt; x + y;</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Function hoisting&nbsp;</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Hoisting -&nbsp; action of moving all variable and function definitions to the top of the current scope</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Functions created by declaration are automatically hoisted</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can be invoked before they are defined</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Variable hoisting - variables defined with var automatically go to top of scope</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can also be invoked before definition but this is problematic because the assignment is NOT hoisted</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Will be undefined until it is assigned a value</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Best to use const and let to avoid hoisting issues</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Functions expressions are&nbsp; hoisted like variables</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">If declared using var - declaration is hoisted but not the function</span></li>
+          </ul>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Callbacks - a function passed to another function as an argument</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Use the function name as a parameter and call the function from within the other function</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Array iterators</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">forEach</span><span style="font-weight: 400;"> - uses a callback function to pass arguments to as it loops over each value in an array</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">map() - </span><span style="font-weight: 400;">similar to </span><span style="font-weight: 400;">forEach </span><span style="font-weight: 400;">but it replaces each value in the array with what is returned from the callback function</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">reduce()</span><span style="font-weight: 400;"> - cumulatively combines results as ti loops and returns a single result</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Can be used to improve the </span><span style="font-weight: 400;">mean()</span><span style="font-weight: 400;"> function</span></li>
+          </ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">filter() </span><span style="font-weight: 400;">- returns a new array of only truthy values the are returned from the callback function</span></li>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Chaining iterators - These iterators can be chained together to complete more complex transformations.</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">Ex-</span><span style="font-weight: 400;"> [1,2,3].map( x =&gt; x*x ).reduce((acc,x) =&gt; acc + x );</span></li>
+          <ul>
+          <li style="font-weight: 400;"><span style="font-weight: 400;">This uses map() and reduce() to square a set of numbers then add them all up</span></li>
+          </ul>
+          </ul>
+          </ul>
+          </ul>
+          </ul>
+          <p>&nbsp;</p>
+      </section>    
+        
+    </main>
+    <footer>
+        <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+    </footer>
+</body>
+
+</html>
