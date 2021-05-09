@@ -99,32 +99,39 @@ function addMachine()  {
 
 //stretch 1 - function definitions
 
-const val1 = parseInt(document.getElementById("input4").value);
-const val2 = parseInt(document.getElementById("input5").value);
-console.log(val1, val2);
-
-
 // function declaration
+function output(value) {
+  const outputId = document.getElementById('output4');
+  outputId.innerHTML = value;
+}
+
 function calcAdd() {
-console.log(val1, val2);
-  document.getElementById('output4').innerHTML = val1 + val2;
+const add1 = parseInt(document.getElementById("input4").value);
+const add2 = parseInt(document.getElementById("input5").value);
+let sum = add1 + add2;
+output(sum);
 }
 
 // function expression
-function calcSub(val1, val2) {
-  const sub = function(val1, val2) {
-  subtract = val1 - val2;
+function calcSub() {
+  const sub = function() {
+    const sub1 = parseInt(document.getElementById("input4").value);
+    const sub2 = parseInt(document.getElementById("input5").value);
+    return sub1 - sub2;
   }
-  document.getElementById('output4').innerHTML = sub;
+  output(sub);
 }
 
 // arrow function
 
-function calcMult(val1, val2) {
-  const mult = () => val1 * val2;
-  document.getElementById('output4').innerHTML = mult;
+function calcMult() {
+  const mult1 = parseInt(document.getElementById("input4").value);
+  const mult2 = parseInt(document.getElementById("input5").value);
+  document.getElementById('output5').innerHTML = mult1 * mult2;
+  console.log(mult1, mult2)
+  const mult = () => mult1 * mult2;
+  output(mult);
 }
-//a function to run the calculation
 
 
 

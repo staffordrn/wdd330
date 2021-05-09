@@ -24,7 +24,7 @@ header, main, footer {
     padding: .5rem;
     max-width: 75%;
 }
-.game {
+.quiz-body {
     color: white;
     background: lightslategray;
     padding: 2em;
