@@ -1,44 +1,22 @@
-function calculator(){
-let calculator = {
-    sum() {
-    return this.a + this.b;
-},
 
-mul() {
-    return this.a * this.b;
-},
-
-read() {
-    this.a = +prompt('a?', 0);
-    this.b = +prompt('b?', 0);
+const form = document.forms['search'];
+const input = form.elements.searchInput;
+input.addEventListener('focus', function(){
+    if (input.value === 'Search Here') {
+    input.value = ''
     }
-};
-
-    calculator.read();
-    alert( calculator.sum() );
-    alert( calculator.mul() );
-}
-
-function counter() {
-    let ladder = {
-    step: 0,
-    up() {
-        this.step++;
-    },
-    down() {
-        this.step--;
-    },
-    showStep: function() { 
-        alert( this.step );
-    }
-}
-
-    ladder.up();
-    ladder.up();
-    ladder.down();
-    ladder.showStep();  //works fine
-
-    //ladder.up().up().up().up().down().showStep() 
+}, false);
+input.addEventListener('blur', function(){
+    if(input.value === '') {
+    input.value = 'Search Here';
+    } 
+}, false);
+input.addEventListener('change', () => console.log('changed'), false);
+input.value = 'Search Here';
+form.addEventListener ('submit', search, false);
+function search(event) {
+alert(`You searched for: ${input.value}`);
+event.preventDefault();
 }
 
 // Quiz Ninja Project 

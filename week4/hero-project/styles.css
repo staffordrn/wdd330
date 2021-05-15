@@ -1,0 +1,18 @@
+form {
+  background: azure;
+  border: 5px solid cadetblue;
+  border-radius: 10px;
+  padding: 100px;
+  margin: 50px;
+  font-family: arial;
+}
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid cadetblue;
+}
+.field-title {
+ display: inline-block;
+  padding-bottom: 20px;
+  font-size: 1.5em; 
+}
