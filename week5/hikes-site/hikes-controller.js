@@ -38,6 +38,7 @@ export default class HikesController {
   console.log(hikeArray);
   hikeArray.forEach(item => item.addEventListener('click', event => {
     this.showHikeDetails(event.currentTarget.getAttribute('id'));}))
+    //this.showHikeDetails(event.currentTarget.dataset.name);}))
     //this.showHikeDetails('Teton Canyon');}))
   }
 }
