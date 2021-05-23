@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+      <!-- <img src="profile-image-small.jpg" alt="Renada Stafford Profile Image"> -->
+      <h1>Renada Stafford - Week 5</h1>
+  </header>
+  <main> 
+
+    <section> <!-- practice from ch 8: Formss -->
+      <h1><a href="team-activity/index.html">Team Activity</a></h1>
+    </section>
+
+    <hr>
+
+    <section> <!-- team activity code link -->
+      <h1><a href="hikes-site/index.html">Hike site with MVC</a></h1>
+    </section>
+    
+    <hr>
+      
+    <section> <!-- notes -->
+        <h1>Week 5 Notes</h1>
+        <h1>Ch 10: Testing and Debugging</h1>
+        <h2>Errors, Exceptions, and Warnings</h2>
+        <ul>
+        <li>Error - caused when something goes wrong</li>
+        <ul>
+        <li>System error - something goes wrong with system or devices</li>
+        <li>Programmer error - syntax errors, faulty logic, typos</li>
+        <li>User error - user has entered data incorrectly (can also be considered programmer error programmers should anticipate and minimize user errors)</li>
+        </ul>
+        <li>Exceptions - An error that returns a value that can be used to deal with the error</li>
+        <ul>
+        <li>ReferenceError: unicorn is not defined</li>
+        </ul>
+        <li>Stack Traces</li>
+        <ul>
+        <li>Produced by exception</li>
+        <li>Works backward to find the start of the sequence that caused the exception</li>
+        </ul>
+        <li>Warnings</li>
+        <ul>
+        <li>Produced by errors that aren&rsquo;t enough to cause the program to crash</li>
+        <li>Code still runs but possible incorrectly</li>
+        </ul>
+        </ul>
+        <h2>Strict Mode</h2>
+        <ul>
+        <li>Produces more exceptions and warnings for debugging</li>
+        <li>Does not allow use of some deprecated features</li>
+        <ul>
+        <li>Considers old practices in &ldquo;poor style&rdquo; and treats them as errors</li>
+        </ul>
+        <li>Helps spot errors early on</li>
+        <li>For strict mode: &lsquo;use strict&rsquo;;</li>
+        <ul>
+        <li>Can be used inside functions</li>
+        <li>Modules are in strict mode by default</li>
+        </ul>
+        </ul>
+        <h2>Feature Detection</h2>
+        <ul>
+        <li>Use an if statement to see if a feature exists before trying to use it</li>
+        <ul>
+        <li>Ensures no errors from trying to use a non-existent feature</li>
+        </ul>
+        </ul>
+        <h2>Debugging in the browser</h2>
+        <ul>
+        <li>alert() - acts as breakpoint and stops code</li>
+        <li>console.log() - does not stop code, logs variable values</li>
+        <li>console.trace() - logs an interactive stack trace in the console</li>
+        <li>Browser debugging tools - set breakpoints, use &lsquo;debugger&rsquo; keyword</li>
+        </ul>
+        <h2>Error Objects</h2>
+        <ul>
+        <li>Created when an exception occurs or with a constructor function for custom error objects</li>
+        <li>Throwing Exceptions</li>
+        <ul>
+        <li>Throw your own exceptions using throw</li>
+        <ul>
+        <li>throw new Error('Something has gone badly wrong!');</li>
+        </ul>
+        </ul>
+        </ul>
+        <h2>Exception Handling</h2>
+        <ul>
+        <li>Wrap code in a try block if you think it will result in an exception</li>
+        <li>A catch block catches the error</li>
+        <li>A finally block holds code that is executed after the try and catch even if no errors occur.</li>
+        </ul>
+        <h2>Tests</h2>
+        <ul>
+        <li>Test Driven Development (TDD)</li>
+        <ul>
+        <li>The process&nbsp;</li>
+        <ol>
+        <li>Write tests (that initially fail)&nbsp;</li>
+        <li>Write code to pass the tests&nbsp;</li>
+        <li>Refactor the code&nbsp;</li>
+        <li>Test refactored code&nbsp;</li>
+        <li>Write more tests for new features&nbsp;</li>
+        </ol>
+        </ul>
+        </ul>
+      <!-- <h1>References</h1>
+      <ul>
+        <li><a href="https://www.thecrazyprogrammer.com/2019/09/javascript-tic-tac-toe-game.html">Javascript Tic Tac Toe tutorial</a></li>
+        <li><a href="https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/">Simple Tic Tac Toe Game Using Javascript</a></li>
+
+        
+      </ul> -->
+    </section>    
+      
+  </main>
+  <footer>
+      <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+  </footer>
+</body>
+
+</html>
