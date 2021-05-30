@@ -21,6 +21,10 @@ function make_list() {
     {
       label: "Week 5 Notes",
       url: "week5/index.html"
+    },
+    {
+      label: "Week 6 Challenge 1",
+      url: "week6/index.html"
     }//, <--dont forget the comma in between array elements
   ]
   links.forEach((link)=> {

@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.to-do-app {
+    margin: 50px auto;
+    padding: 50px;
+    width: 50%;
+    background-color: #CAF0F8;
+    border-radius: 10px;
+    color: #023E8A;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    padding: 10px;
+    font-size: 3em;
+    text-align: center;
+    color: white;
+    background: #023E8A;
+}
+#app-body {
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+button {
+    border: none;
+    background: #023E8A;
+    color: white;
+    padding: 10px;
+    border-radius: 5px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);   
+}
+
+.completed {
+    color: #d3d3d3;
+}
+form {
+    text-align: center;
+    font-size: 2em;
+}
+#to-do {
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    background: #CAF0F8;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 60%;
+}
+#menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    
+}
+#menu > div {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: #023E8A;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.hide {
+    display: none;
+}
+#display {
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+p {
+    display: inline-block;
+    padding-left: 20px;
+}
