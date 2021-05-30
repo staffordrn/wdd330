@@ -49,6 +49,7 @@ export function saveTodo(task, key) {
 }
 export function completeTodos() {
     //this.parentNode.classList.toggle("completed");
+    this.classList.toggle('completed');
     this.nextElementSibling.classList.toggle('completed')
     this.toggleAttribute("checked"); 
     let task = this.nextElementSibling.innerHTML;
