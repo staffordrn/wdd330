@@ -30,16 +30,24 @@ export function writeToLS(key, task) {
     oldList.push(newItem);
     localStorage.setItem(key, JSON.stringify(oldList));
 }
-export function removeFromLS(done, key) {
+export function removeFromLS(key) {
     let oldList = JSON.parse(localStorage.getItem(key));
     //let index = oldList.taskContent.indexOf(done);
     oldList.forEach(getCompleted);
     function getCompleted(task, i) {
-        if (task.taskContent == done) {
+        if (task.completed == true) {
             oldList.splice([i], 1);
         }
     }
     localStorage.setItem(key, JSON.stringify(oldList));
-    const todo = new Todo();
-    todo.listTodos();
+}
+export function setCompleteLS(done, key) {
+    let oldList = JSON.parse(localStorage.getItem(key));
+    oldList.forEach(setCompleted);
+    function setCompleted(task) {
+        if (task.taskContent == done) {
+            task.completed = true;
+        }
+    }
+    localStorage.setItem(key, JSON.stringify(oldList));
 }

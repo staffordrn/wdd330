@@ -1,5 +1,5 @@
 export const toDoList = [];
-import { removeFromLS } from './ls.js';
+import { removeFromLS, setCompleteLS } from './ls.js';
 import { renderTodoList } from './utilities.js';
 
 
@@ -50,20 +50,21 @@ export function saveTodo(task, key) {
 export function completeTodos() {
     //this.parentNode.classList.toggle("completed");
     this.nextElementSibling.classList.toggle('completed')
-    this.toggleAttribute("checked");   
+    this.toggleAttribute("checked"); 
+    let task = this.nextElementSibling.innerHTML;
+    setCompleteLS(task, 'tdList');
+
 }
 
 export function removeTodos() {
-    const done = document.getElementsByClassName('completed');
+    /* const done = document.getElementsByClassName('completed');
     let doneArray = [...done];
     doneArray.forEach(getContent);
     function getContent(item) {
-        let content = item.innerHTML;
-        console.log(content);
-        removeFromLS(content, 'tdList');
-    }
-    
-    
+        let content = item.innerHTML;*/
+        removeFromLS('tdList'); 
+        let disp = new Todo();
+        disp.listTodos('tdList');   
 }
 
 export function hideTodos() {
