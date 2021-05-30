@@ -7,7 +7,7 @@ export function renderTodoList(list) {
         //let listItem = '';
         list.forEach(listCreate);
         function listCreate(todoItem, i) {
-            const container = document.createElement('span');
+            const container = document.createElement('div');
             const input = document.createElement('input');
             const taskContent = document.createElement('p');
             input.type = 'checkbox';

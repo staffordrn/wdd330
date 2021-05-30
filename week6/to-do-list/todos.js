@@ -18,6 +18,8 @@ export default class Todo {
         let task = document.getElementById('to-do').value;
         if (task !== '') {
             let key = 'tdList';
+            let clear = document.getElementById('to-do');
+            clear.value = '';
             saveTodo(task, key);
         } else {
             alert('Please enter a task');
