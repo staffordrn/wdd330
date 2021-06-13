@@ -1,0 +1,86 @@
+@font-face {
+font-family: "StarJedi";
+src: url("fonts/starjedi-webfont.woff");
+src: url("fonts/starjedi-webfont.woff") format("woff");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body {
+    background-image:  url("../week8/img/stars.png");
+    color: #fff;
+    max-width: 100%;
+}
+#title {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1em;
+    border-radius: 20px;
+    max-width: 70%;
+    margin: 20px auto;
+;}
+#title h1 {
+    font-family: "StarJedi", 'Arial' ;
+    color: gold;
+    font-size: 2em;
+}
+#title h2{
+    font-size: 3em;
+    text-align: center;
+}
+.sw-main {
+    margin: 0 auto;
+    max-width: 100%;
+}
+#app-body {
+    display: flex;
+    flex-flow: row wrap;
+}
+.ship {
+    margin: 50px;
+    text-align: center;
+}
+h1 {
+    font-size: 3em;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+h3, li, #title {
+    font-family: 'Open Sans', sans-serif;
+}
+li {
+    list-style-type: none;
+    padding-left: 0px;
+}
+h3 {
+    font-size: 1em;
+}
+.hide {
+    display: none;
+}
+button {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    font-family:  'Open Sans', sans-serif;
+}
+#buttons {
+    display: flex;
+    justify-content: space-between;
+}
+#buttons > button {
+    margin: 5px;
+}
+@media only screen and (min-width: 600px) {
+    .sw-main {
+        max-width: 60%;
+    }
+    #app-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        justify-self: center;
+    }
+}

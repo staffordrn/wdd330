@@ -31,4 +31,16 @@ export default class CommentController {
     //let commentList = JSON.parse(localStorage.getItem(key));
     renderRandomComments(commentList); 
     }
+ /*  addComment(name, content, key) {
+    
+        if (oldList !== null) {
+            oldList.push(newTask);
+            localStorage.setItem(key, JSON.stringify(oldList));
+            newTask.listTodos(key);
+        } else {
+            const toDoList = [];
+            toDoList.push(newTask);
+            localStorage.setItem(key, JSON.stringify(toDoList));
+            newTask.listTodos(key);
+        } */
 }

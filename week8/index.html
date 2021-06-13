@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+      <!-- <img src="profile-image-small.jpg" alt="Renada Stafford Profile Image"> -->
+      <h1>Renada Stafford - Week 8</h1>
+  </header>
+  <main> 
+    <section> <!-- team activity -->
+      <h1><a href="swapi.html">Star Wars API Practice</a></h1>
+    </section>
+    <hr>
+    <section class="css-animations"> <!-- transform and transition practice -->
+      <h1>CSS Transforms</h1>
+      <p>Lets you rotate, scale, translate, skew any element on a web page</p>
+      <div class="transform-box" id="box1">Normal</div>
+      <div class="transform-box" id="box2">translate(45px, 45px);</div>
+      <div class="transform-box" id="box3">transform: scale(1.5, 0.25);
+</div>
+      <div class="transform-box" id="box4">transform: rotate(10deg)</div>
+      <div class="transform-box" id="box5">transform: skew(15deg, 4deg);
+</div>
+      <p>Transform function order matters!: if you rotate before translating, your translate direction will be based on the rotated axis.</p>
+      <div class="transform-oval" id="oval1">Normal</div>
+      <div class="transform-oval" id="oval2">Rotate then translate</div>
+      <div class="transform-oval" id="oval3">Translate then rotate</div>
+      <h1>CSS Transitions</h1>
+      <h2>Steps to Create CSS Transisions</h2>
+      <p>1. Declare the original state of the element in the default style declaration.</p>
+      <p>2. Declare the final state of your transitioned element (ie a hover state)</p>
+      <p>3. Include the transition functions using the transition properties
+      <ul>
+        <li>transition-property: defines elements to be transformed</li>
+        <li>transition-duration: how long the transition will take (sec or  ms)</li>
+        <li>transition-timing-function: controls the pace of the transition even more(ease, linear, ease-in, ease-out, ease-in-out)</li>
+        <li>transition-delay: allows a delay before the animation begins (in ms or sec)</li>
+      </ul>
+      </p>
+      <div class="transition-circle" id="circle1">Hover over me!</div>
+      <h1>CSS Animations</h1>
+      <p>CSS animations allow you more control than transitions by using keyframes. A <strong>keyframe</strong> defines the start and end af a smooth transition. Adding multiple keyframs allows for more complex animations</p>
+      <p>Steps for animations</p>
+        <ul>
+          <li>create a named animation</li>
+          <li>attach the animation to an element</li>
+          <li>use percentages to indicate where in the animation the keyframes are</li>
+        </ul>
+
+      <div class="animation-box">Hover...</div>
+
+      <h1>Canvas, SVG, and Drag and Drop</h1>
+      <p>Canvas lets you draw shapes, lines, gradients, patterns, etc on a web page. It uses a &lt;canvas&gt; tag and needs an id and height and width</p>
+      <canvas id="myCanvas" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+      <canvas id="myCanvas2" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+      <canvas id="myCanvas3" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+      <canvas id="myCanvas4" class="myCanvas" width="200" height="200">
+        Sorry! Your browser doesn’t support Canvas.
+      </canvas>
+
+      <p>SVG = Scalable Vector Graphics. Images created with SVG are available to the DOM unlike canvas</p>
+      <h3>Here is an SVG circle</h3>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <desc>Drawing a green circle</desc>
+        <circle cx="50" cy="50" r="25" fill="#87bba2"/>
+      </svg>
+      <!-- SMILEY SVG -->
+      <h3>Here is an SVG smiley</h3>
+      <img src="img/smiley.svg">
+      <h1>Canvas vs SVG</h1>
+      <p>Canvas allows for:</p>
+      <ul>
+      <li>pixel manipulation</li>
+      <li>saving images to png or jpg</li>
+      </ul>
+      <p>But not:</p>
+      <ul>
+      <li>Avaliability to DOM</li>
+      <li>adding to a canvas once its drawn</li>
+      </ul>
+      <p>SVG has:</p>
+      <ul>
+      <li>DOM accessibility</li>
+      <li>more tools to workwith</li>
+      </ul>
+      <p>But not:</p>
+      <ul>
+      <li>manipulating images like canvas</li>
+      </ul>
+      <h1>Drag and Drop</h1>
+      <p>Process</p>
+      <ul>
+      <li>Set the draggable attribute on any HTML elements you’d like to be draggable (draggable="true")</li>
+      <li>Add an event listener for the dragstart event on any draggable HTML elements.</li>
+      <li>Add an event listener for the dragover and drop events on any elements that you want to have accept dropped items</li>
+      </ul>
+      <p>The Data Transafer Object allows you to get and set data about the elements being dragged (data type and value)</p>
+      <div ></div>
+
+
+
+    </section>
+    
+
+    <!-- <h1>References</h1>
+    
+    </section>   -->  
+      
+  </main>
+  <footer>
+      <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+  </footer>
+</body>
+<script src="canvas.js" type="text/javascript"></script>
+
+</html>
+
+

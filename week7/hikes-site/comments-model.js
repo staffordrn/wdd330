@@ -41,17 +41,22 @@ export const commentList = [
     }
 ];
 
-export function setComment(commentObject, key) {
-    let oldList = JSON.parse(localStorage.getItem(key));
-    if (oldList !== null) {
-        oldList.push(newTask);
-        localStorage.setItem(key, JSON.stringify(oldList));
-        newTask.listTodos(key);
-    } else {
-        const toDoList = [];
-        toDoList.push(newTask);
-        localStorage.setItem(key, JSON.stringify(toDoList));
-        newTask.listTodos(key);
+export default class CommentModel {
+  constructor(type) {
+    this.type = type;
+    // get the initial list of comments out of local storage if it exists
+    this.comments = getFromLS(this.type) || [];
+  }
+  //getter function for all comments 
+    getFromLS() {
+        return hikeList;
+    }
+    //setter function for comments
+    getHikeByName(hikeName) {
+        return this.getAllHikes().find(hike => hike.name === hikeName);
+  }
+    setToLS(comments, key) {
+        
     }
 }
 //export function getComment(key)

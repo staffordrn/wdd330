@@ -32,10 +32,100 @@ header, main, footer {
     border-radius: 5px;
 }
 header, footer, footer a {
-    text-align: center;background-color: #170042;
+    text-align: center;background-color: #364958;
     color: whitesmoke;
 }
 footer {
     font-size: 1em;
 }
+/* transforms and transitions styles*/
 
+.transform-box {
+    height: 150px;
+    width: 150px;
+    background-color: #55828b;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#box2 {
+    transform: translate(45px, 45px);
+}
+#box3 {
+    transform: scale(1.5, 1.25);
+}
+#box4 {
+    transform: rotate(10deg);
+}
+#box5 {
+    transform: skew(15deg, 4deg);
+
+}
+.transform-oval {
+    height: 75px;
+    width: 150px;
+    background-color: #87bba2;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#oval2 {
+    transform: translateX(100px) rotate(-135deg);
+}
+#oval3 {
+    transform: rotate(-135deg) translateX(100px);
+}
+.transition-circle {
+    height: 150px;
+    width: 150px;
+    color: white;
+    background: #3b6064;
+    border-radius: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.transition-circle:hover {
+    transform: scale(3);
+    color: #364958;
+    background-color: #c9e4ca;
+    transition-property: transform, color, background-color; 
+    transition-duration: 0.2s; 
+    transition-timing-function: ease-out;
+    transition-delay: 50ms;
+}
+.animation-box {
+    width: 150px;
+    height: 150px;
+    background-color: #55828b;
+    margin: 50px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.animation-box:hover {
+  animation: changeColor 5s infinite, rotateBox 5s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #364958;
+  }
+  100% {
+    background-color: #c9e4ca;
+  }
+}
+@keyframes rotateBox {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+   transform: rotate(-90deg);
+  }
+}
+
+.myCanvas {
+ border: solid 2px #364958;
+}

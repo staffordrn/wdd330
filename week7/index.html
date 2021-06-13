@@ -55,6 +55,156 @@
     <hr>
       
     <section> <!-- notes -->
+      <h1>Week 7 Notes</h1>
+      <h1>Ch 11: Further Functions</h1>
+      <h2>Immediately Invoked Function Expressions (IFFE or &ldquo;iffy&rdquo;)</h2>
+      <ul>
+      <li>Anonymous function that&rsquo;s invoked as soon as it&rsquo;s defined</li>
+      <li>Good for keeping variables out of scope (though not needed after ES6)</li>
+      <li>Good for creating temporary &ldquo;run once&rdquo; code</li>
+      <li>Can also be used to contain strict mode code</li>
+      </ul>
+      <h2>Functions that define and rewrite themselves</h2>
+      <ul>
+      <li>Redefine a function by assigning an anonymous function to a variable with the same name as the function.</li>
+      </ul>
+      <h2>Recursive Functions</h2>
+      <ul>
+      <li>Function that invokes itself until a certain condition is met</li>
+      </ul>
+      <h2>Callbacks</h2>
+      <ul>
+      <li>Callbacks are functions that are passed arguments to other functions then invoked inside the function it was passed to.</li>
+      <li>Callbacks make event driven asynchronous programming possible</li>
+      <ul>
+      <li>JS is single threaded (one piece of code at a time)</li>
+      <li>Callbacks can be invoked when an event happens allowing the3 code to run asynchronously (out of order)</li>
+      </ul>
+      <li>Avoid using multiple callbacks in a single function</li>
+      </ul>
+      <h2>Promises</h2>
+      <ul>
+      <li>Represents the future result of an asynchronous operation</li>
+      <li>Help avoid messy code from using multiple callbacks</li>
+      <li>Process</li>
+      <ul>
+      <li>Promise is made - ordered a burger ands you get a tray and a buzzer as a promise that you will get a burger</li>
+      <li>The operation is pending - waiting for you r burger</li>
+      <ul>
+      <li>The operation is said to be &ldquo;unsettled&rdquo;</li>
+      </ul>
+      <li>Operation is completed (settled) - the buzzer goes off and your order is ready</li>
+      <li>Result is 2 different outcomes</li>
+      <ul>
+      <li>Resolved - completed successfully - you pick up your delicious burger</li>
+      <li>Rejected - didn&rsquo;t work or resulted in an error - there was something wrong with your burger or you decided not to wait any more and left.</li>
+      </ul>
+      </ul>
+      <li>The anatomy of a promise</li>
+      <ul>
+      <li>const promise = new Promise( (resolve, reject) =&gt; {&nbsp;</li>
+      </ul>
+      </ul>
+      <p>// initialization code goes here&nbsp;</p>
+      <p>if (success) { resolve(value);&nbsp;</p>
+      <p>} else {&nbsp;</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;reject(error); } });</p>
+      <h2>Async Functions</h2>
+      <ul>
+      <li>Use the async keyword and let you write asynchronous code as if it was synchronous</li>
+      <ul>
+      <li>Use the await operator before the asynchronous function</li>
+      </ul>
+      <li>Process</li>
+      <ul>
+      <li>Add the async keyword before the asynchronous function</li>
+      <li>Wrap each step of the function in a try block to catch errors</li>
+      <li>The await operator is added to make sure the next line of code isn&rsquo;t executed until the current one is finished.</li>
+      </ul>
+      </ul>
+      <h2>Closures</h2>
+      <ul>
+      <li>A reference to a variable that was created inside the scope of another function but is kept alive and used in another part of the program</li>
+      <ul>
+      <li>Formed when an inner function is returned by an outer function allowing it to maintain access to any inner variables inside the inner function.</li>
+      </ul>
+      </ul>
+      <h2>Generators</h2>
+      <ul>
+      <li>Special functions used to produce iterators that maintain the state of a value</li>
+      <li>To define&nbsp;</li>
+      <ul>
+      <li>function* exampleGenerator() { // code for the generator goes here }&nbsp;</li>
+      </ul>
+      <li>Doesn&rsquo;t run code in the function - returns a generator object used to create an iterator</li>
+      <ul>
+      <li>Iterator implements next() method that returns a value every time it&rsquo;s called</li>
+      <li>Uses the yield keyword to return a value</li>
+      <ul>
+      <li>Value is stored for use later unlike return</li>
+      </ul>
+      </ul>
+      <li>Good for creating sequences</li>
+      </ul>
+      <h2>Functional Programming</h2>
+      <ul>
+      <li>A programming paradigm characterized by the use of pure functions</li>
+      <ul>
+      <li>Pure function rules:</li>
+      <ul>
+      <li>Pure function return value comes from provided arguments not values found elsewhere in the program</li>
+      <li>No side-effects: pure functions don&rsquo;t change va;ues or data anywhere else in the program - only non-destructive data transformations</li>
+      <ul>
+      <li>Using const helps prevent destructive transformations too</li>
+      </ul>
+      <li>Referential transparency: a function will always return the same results with the same arguments</li>
+      </ul>
+      <li>Pure functions must have:</li>
+      <ul>
+      <li>At least 1 argument</li>
+      <li>A return value</li>
+      </ul>
+      </ul>
+      </ul>
+      <h2>Currying</h2>
+      <ul>
+      <li>A process involving partially applying functions</li>
+      <ul>
+      <li>Curried functions don&rsquo;t have all arguments supplied so it returns another function that holds the provided arguments and waits for the rest of the arguments.</li>
+      <li>Result is returned when the expected arguments are finally provided.</li>
+      </ul>
+      </ul>
+      <h1>Ch 13: Ajax</h1>
+      <h2>Ajax</h2>
+      <ul>
+      <li>A technique for allowing web pages to communicate with a server asynchronously and update a page without reloading.</li>
+      <li>Ajax allows Javascript to request resources from a server</li>
+      <ul>
+      <li>Usually as JSON data or bits of text or HTML</li>
+      </ul>
+      <li>Stands for <span style="text-decoration: underline;">A</span>synchronous <span style="text-decoration: underline;">J</span>avaScript <span style="text-decoration: underline;">a</span>nd <span style="text-decoration: underline;">X</span>ML</li>
+      </ul>
+      <h2>The Fetch API</h2>
+      <ul>
+      <li>Replaced XMLHttpRequest object</li>
+      <li>Provides a global fetch() method</li>
+      <ul>
+      <li>This method takes one url as an argument and works as a promise</li>
+      <li>Example:</li>
+      </ul>
+      </ul>
+      <p>fetch('https://example.com/data')&nbsp;</p>
+      <p>.then( // code that handles the response )</p>
+      <p>.catch( // code that runs if the server returns an error )&nbsp;</p>
+      <h2>Response Interface</h2>
+      <ul>
+      <li>Processes the objects returned by a Fetch API promise with its own methods and properties</li>
+      </ul>
+      <h2>Form Data interface</h2>
+      <ul>
+      <li>Makes it easier to submit information using Ajax</li>
+      <li>Create a FormData instance (const data = new FormData(); ) to reduce the amount of code you need to write.</li>
+      </ul>
         
       <!-- <h1>References</h1>
       <ul>
