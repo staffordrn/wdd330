@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+      <!-- <img src="profile-image-small.jpg" alt="Renada Stafford Profile Image"> -->
+      <h1>Renada Stafford - Week 9</h1>
+  </header>
+  <main> 
+    <section> <!-- team activity -->
+      <h1><a href="javascript30-drums/index-START.html">Drum Set</a></h1>
+    </section>
+    <hr>
+    <section > <!-- week 9 notes -->
+      <h1>Chapter 9: the Window Object</h1>
+      <p>Every Javascript environment has a global object. In a browser it is called the window object. Any global variables are properties of this object and any functions you create are its methods.</p>
+      <h2>Browser Object Model (BOM)</h2>
+      <ul>
+      <li>A collection of&nbsp; properties and methods that have info about the browser and screen</li>
+      <li>These properties and methods are available through the window object</li>
+      </ul>
+      <h2>The Browser History</h2>
+      <ul>
+      <li>Window.history.length shows how many pages have been visited before the current page</li>
+      <li>Window.history.go() can be used to go to a specific page</li>
+      <li>Window.history.forward and Window.history.back() can let you navigate forward and backward by a page</li>
+      </ul>
+      <h2>Controlling Windows</h2>
+      <ul>
+      <li>Use window.open() to open a new window and window.close() to close it</li>
+      <li>There is also a moveTo and resizeTo method</li>
+      </ul>
+      <h2>Screen Information</h2>
+      <ul>
+      <li>The window.screen object has info on your browser screen&nbsp;</li>
+      <li>More useful on mobile (detecting change in orientation, turn off device screen, etc)</li>
+      </ul>
+      <h2>The Document Object</h2>
+      <ul>
+      <li>Each window contains a document object</li>
+      <li>Cookies: small files saved locally to help save state</li>
+      <ul>
+      <li>Made up a text file of name/value pairs</li>
+      <li>Create once using document.cookie&nbsp; = &lsquo;key=value&rsquo;;</li>
+      <li>Cookies don&rsquo;t overwrite, they append</li>
+      <li>Reassign by using same key with different value</li>
+      <li>Cookies are session by default but can persist by adding an expiry date</li>
+      <ul>
+      <li>Add&nbsp; "; expires=date" (date is a utc string) to the end of the cookie</li>
+      </ul>
+      <li>Cookies can only be read by pages in the same directory and domain where the file was set</li>
+      </ul>
+      </ul>
+      <h2>Timing Functions</h2>
+      <ul>
+      <li>Used for executing functions at intervals</li>
+      <ul>
+      <li>window.setTimeout(), window.clearTimeout(), window.setInterval()&nbsp;</li>
+      </ul>
+      <li>Can be used for animations</li>
+      <li>requestAnimationFrame() is better</li>
+      <li>Using CSS for animations is best</li>
+      </ul>
+      <h1>Chapter 14: HTML5 APIs</h1>
+      <h2>The data- Attribute</h2>
+      <ul>
+      <li>Used to embed data using attributes that are ignored by the browser</li>
+      <ul>
+      <li>Sole purpose is to be used by a JS program</li>
+      <li>Must start with data-, contain only lowercase letters, numbers, dots, hyphens, colon, or underscores and include an optional string value</li>
+      <li>&nbsp;Superman</li>
+      <li>The data-powers attribute can be accessed using:</li>
+      <ul>
+      <li>const superman = document.getElementById('hero'); const powers = superman.dataset.powers; &lt;&lt; 'flight superSpeed'</li>
+      </ul>
+      </ul>
+      </ul>
+      <h2>HTML5 APIs</h2>
+      <p>Help give access to hardware (cameras, GPS, batteries, etc) Here are a few examples:</p>
+      <ul>
+      <li>HTML5 Web Storage (localStorage): similar to cookies (key/value storage) but with fewer restrictions</li>
+      <li>Geolocation API: used to find the geographical location of the device</li>
+      <ul>
+      <li>It&rsquo;s a property of the navigator object</li>
+      </ul>
+      <li>Web Workers: allow processes to be run in the background so they don&rsquo;t prevent the rest of the script from running. Especially useful for long running scripts</li>
+      <li>Websockets: allow two-way communication with a server (aka push messaging)</li>
+      <ul>
+      <li>Uses wss:// instead of https://</li>
+      </ul>
+      <li>Notifications: allows you to show messages using the operating system&rsquo;s notifications</li>
+      <li>Multimedia:&nbsp; allows JavaScript to control the playback of audio and video</li>
+      </ul>
+      <h2>Shims and Polyfills</h2>
+      <ul>
+      <li>Used to fix new API functionality on unsupported browsers.&nbsp;</li>
+      <li>Shim: adds missing functionality to a browser</li>
+      <li>Polyfill: same as shim but also uses API commands as if it was supported natively</li>
+      </ul>
+      <p>&lt;!doctype html&gt;</p>
+      <p>&lt;html lang='en'&gt;</p>
+      <p>&lt;head&gt;</p>
+      <p>&lt;meta charset='utf-8'&gt;</p>
+      <p>&lt;title&gt;Animation Example&lt;/title&gt;</p>
+      <p>&lt;link rel='stylesheet' href='styles.css'&gt;</p>
+      <p>&lt;/head&gt;</p>
+      <p>&lt;body&gt;</p>
+      <p>&lt;div id='square'&gt;&lt;/div&gt;</p>
+      <p>&lt;script src='main.js'&gt;&lt;/script&gt;</p>
+      <p>&lt;/body&gt;</p>
+      <p>&lt;/html&gt;</p>
+      <p>&nbsp;#square { margin: 100px; width: 100px; height: 100px; background: #d16; }&nbsp;</p>
+      <p>//simple animation</p>
+      <p>const squareElement = document.getElementById('square');&nbsp;</p>
+      <p>let angle = 0; setInterval( () =&gt; { angle = (angle + 2) % 360; squareElement.style.transform = `rotate(${angle}deg)` }, 1000/60);</p>
+      <p>//better animation</p>
+      <p>const squareElement = document.getElementById('square'); let angle = 0; function rotate() { angle = (angle + 2)%360; squareElement.style.transform = `rotate(${angle}deg)` window.requestAnimationFrame(rotate); }&nbsp;</p>
+      <p>const id = requestAnimationFrame(rotate);</p>
+
+
+    </section>
+    
+
+    <!-- <h1>References</h1>
+    
+    </section>   -->  
+      
+  </main>
+  <footer>
+      <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+  </footer>
+</body>
+<script src="canvas.js" type="text/javascript"></script>
+
+</html>
+
+
