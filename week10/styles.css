@@ -1,0 +1,76 @@
+
+*  { 
+    margin: 0; 
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: Ubuntu, sans-serif;
+    color: #100504;
+    background-color: #bdd5ea;
+}
+h1 {
+    font-size: 4.0rem;
+    color: #577399;
+    text-align: center;
+    padding: 30px;
+}
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+#quakeList {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: #577399;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px 1px rgba(0, 0, 0, 0.2);
+    padding: 10px 40px;
+    color: #495867;
+}
+.quake:hover {
+    cursor: pointer;
+}
+.quake {
+    list-style-type: none;
+    padding: 10px;
+    margin: 30px 0;
+    background: #f7f7ff;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.details {
+    list-style-type: none; 
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-break: normal;
+    white-space: normal;
+    color: #f7f7ff;
+}
+.details::before {
+  content: "\2022";  
+  color: #ffa154; 
+  font-weight: bold; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+}
+.loading {
+    color: #f7f7ff;
+    list-style-type: none;
+}
+button {
+    display: block;
+    margin: 40px auto;
+    background-color: #ffa154;
+    color: #495867;
+    padding: 10px 20px;
+    font-family: Ubuntu, sans-serif;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 6px 6px 15px 1px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="eng-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>WDD 330 Portfolio</title>
+  <meta name="description" content="Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="main.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles_p.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <header>
+      <!-- <img src="profile-image-small.jpg" alt="Renada Stafford Profile Image"> -->
+      <h1>Renada Stafford - Week 10</h1>
+  </header>
+  <main> 
+    <section> <!-- team activity -->
+      <h1><a href="quakes.html">Earthquake Tracker</a></h1>
+    </section>
+    <hr>
+    <section > <!-- week 10 notes -->
+      <h1>Week 10 Notes</h1>
+      <h1>Form Validation</h1>
+      <p>Why Validate</p>
+      <ul>
+      <li>Get the right data in the right format</li>
+      <li>Protect user&rsquo;s data (requiring strong passwords)</li>
+      <li>Protect yourself (the developer)</li>
+      </ul>
+      <p>Different types of client side validation</p>
+      <ul>
+      <li>Built-in form validation</li>
+      <ul>
+      <li>Good performance, not very customizable</li>
+      <li>HTML5 validation: required fields, data type, patterns (regex)</li>
+      </ul>
+      <li>JavaScript validation</li>
+      <ul>
+      <li>Very customizable but you have to create it</li>
+      </ul>
+      </ul>
+      <p>Elements can be styled depending on their validity</p>
+      <ul>
+      <li>CSS :valid and :invalid pseudo classes</li>
+      </ul>
+      <p>The Constraint&nbsp; Validation API</p>
+      <ul>
+      <li>Has methods and properties that work on HTML form elements</li>
+      </ul>
+      <h1>Using Fetch</h1>
+      <p>The Fetch API allows you to access the http pipeline and request and send information</p>
+      <ul>
+      <li>Replaces XMLHttpRequest</li>
+      <li>Really simple to set up:</li>
+      </ul>
+      <p>fetch('http://example.com/movies.json')</p>
+      <p>&nbsp;&nbsp;.then(response =&gt; response.json())</p>
+      <p>&nbsp;&nbsp;.then(data =&gt; console.log());<p>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">The fetch() method can have one optional parameter - the init object</span></li>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">The init object allows you to control many different settings</span></li>
+      </ul>
+      <li style="color: #626262;"><span style="color: #626262;">Fetch can be used to:</span></li>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">Send requests with credentials</span></li>
+      <li style="color: #626262;"><span style="color: #626262;">Upload JSON data</span></li>
+      <li style="color: #626262;"><span style="color: #626262;">Upload files</span></li>
+      <li style="color: #626262;"><span style="color: #626262;">Process text files line by line</span></li>
+      </ul>
+      <li style="color: #626262;"><span style="color: #626262;">You can supply your own request object by using the Request() constructor and pass it to the fetch as and argument</span></li>
+      <li style="color: #626262;"><span style="color: #626262;">Headers:</span></li>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">Use the Headers() constructor to create a headers object</span></li>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">Creates a map of name value pairs</span></li>
+      </ul>
+      <li style="color: #626262;"><span style="color: #626262;">Good use for headers is checking valid HTTP header names</span></li>
+      </ul>
+      <li style="color: #626262;"><span style="color: #626262;">Response Objects</span></li>
+      <ul>
+      <li style="color: #626262;"><span style="color: #626262;">Returned when a fetch promise is resolved</span></li>
+      <li style="color: #626262;"><span style="color: #626262;">Most common: </span><span style="color: #626262;">Response.status, Response.statusText, Response.ok</span></li>
+      </ul>
+      </ul>
+
+    </section>
+    
+
+    <!-- <h1>References</h1>
+    
+    </section>   -->  
+      
+  </main>
+  <footer>
+      <p>Portfolio for Renada Safford | WDD 330 | BYU Iadaho | Spring 2021</p>
+  </footer>
+</body>
+
+</html>
+
+
