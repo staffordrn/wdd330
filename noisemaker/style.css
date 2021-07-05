@@ -9,7 +9,7 @@ body,html {
   font-family: sans-serif;
 }
 
-.container {
+#container {
   width: 80%;
   margin: 100px auto;
   display: flex;
@@ -39,14 +39,9 @@ body,html {
   box-shadow: 0 0 1rem #2ec4b6;
 }
 
-kbd {
-  display: block;
-  font-size: 4rem;
-}
-
 .title {
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
-  color: #ff9f1c;
+  color: #fff;
 }
