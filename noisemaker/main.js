@@ -16,8 +16,10 @@ sounds.forEach(listCreate);
 
 document.querySelectorAll('.btn').forEach(item => {
 item.addEventListener('click', event => {
-  const element = event.target.parentElement;
+  const element = event.target;
+  console.log(element);
   const key = element.dataset.key;
+  console.log(key);
   playing(key);
 });
 

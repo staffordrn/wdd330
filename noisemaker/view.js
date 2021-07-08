@@ -13,8 +13,10 @@ export function displayButtons() {
         div.setAttribute("data-key", sound.name);
         div.setAttribute("class", "btn")
         title.setAttribute("class", "title");
-        title.innerHTML = sound.name;
+        title.innerHTML = sound.title;
+        //div.innerHTML = sound.title;
         div.appendChild(title);
         el.appendChild(div);
+        //el.appendChild(title);
     }
 }
