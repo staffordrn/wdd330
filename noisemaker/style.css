@@ -21,10 +21,11 @@ body,html {
 .btn {
   background-image: url("buttons/button-orange.png");
   background-repeat: no-repeat;
-  height: 300px;
-  width: 300px;
-  background-size: 150px;
+  height: 50px;
+  width: 50px;
+  background-size: 50px;
   background-position: center;
+  padding: 30px;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -42,7 +43,7 @@ body,html {
 } */
 .title {
  /*  display: inline-block; */
-  font-size: 3rem;
+  font-size: 2rem;
   word-wrap: normal;
   /* max-width: 80%; */
   text-transform: uppercase;
@@ -74,6 +75,11 @@ body,html {
     flex-flow: column;
     justify-content: center;
     align-items: center; 
+  }
+  .btn {
+    height: 300px;
+    width: 300px;
+    background-size: 150px;
   }
   .title {
     font-size: 2rem;
