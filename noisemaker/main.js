@@ -15,22 +15,13 @@ sounds.forEach(listCreate);
     }
 
 document.querySelectorAll('.btn').forEach(item => {
-item.addEventListener('click', event => {
-  const element = event.target;
-  console.log(element);
-  const key = element.dataset.key;
-  console.log(key);
-  playing(key);
-});
-
-
-
-  /* item.addEventListener('keydown', event => {
-    const el = event.target.parentElement;
-    const k = el.dataset.key;
-    playing(k); 
-
-  }) */
+  item.addEventListener('click', event => {
+    const element = event.target;
+    console.log(element);
+    const key = element.dataset.key;
+    console.log(key);
+    playing(key);
+  });
 });
 
 //variables
