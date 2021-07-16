@@ -269,3 +269,14 @@ setupSample()
             }
         })
     });
+
+//Volume controls
+//declare variables
+const volumeControl = document.querySelector('#vol');
+const gainNode = audioCtx.createGain();
+//const source = audioCtx.
+audioCtx.connect(gainNode).connect(audioContext.destination);
+
+volumeControl.addEventListener('input', function() {
+    gainNode.gain.value = this.value;
+}, false);

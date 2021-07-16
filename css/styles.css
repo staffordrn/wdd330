@@ -1,22 +1,42 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *  { 
     margin: 0; 
     box-sizing: border-box;
 }
 body {
+    background-image:  linear-gradient(30deg, rgba(50, 0, 130, 0.25), #170042), url("/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
     line-height: 32px;
-    font-family: Ubuntu, sans-serif;
-    color: #2e2e2e;
+    font-family: 'Montserrat', sans-serif;
+}
+body a {
+    color: rgba(255, 255, 255, 0.7);
 }
 h1 {
     font-size: 2.0rem;
-    color: whitesmoke;
+    color: rgba(255, 255, 255, 0.7);
 }
 h2 {
     font-size: 1.5rem;
-    text-align: center;
-    border-bottom: 1px solid #bbb;
+    /* text-align: center; */
+    /* text-align: right; */
+}.portfolio-content {
+    display: flex;
+    flex-flow: row-reverse;
+}
+.wrapper {
+    max-width: 100%;
+    padding: 8.3vw 10vw;
+    text-align: right;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: flex-end; */
+}
+.wrapper h1 {
+    text-align: right;
 }
 .button {
   border: none;
@@ -33,11 +53,11 @@ h2 {
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
-    max-width: 500px;
+    
 }
 header, footer, footer a {
-    text-align: center;background-color: #170042;
-    color: whitesmoke;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
 }
 header img {
     width: 100px;
@@ -45,5 +65,105 @@ header img {
     float: right;
 }
 footer {
-    font-size: .5em;
+    width: 100%;
+    font-size: 1em;
+    background-color: #170042;
+}
+
+/* Portfolio Styles */
+.quiz-body {
+    color: white;
+    background: lightslategray;
+    padding: 2em;
+    margin: 2em;
+    border-radius: 5px;
+}
+.transform-box {
+    height: 150px;
+    width: 150px;
+    background-color: #55828b;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#box2 {
+    transform: translate(45px, 45px);
+}
+#box3 {
+    transform: scale(1.5, 1.25);
+}
+#box4 {
+    transform: rotate(10deg);
+}
+#box5 {
+    transform: skew(15deg, 4deg);
+
+}
+.transform-oval {
+    height: 75px;
+    width: 150px;
+    background-color: #87bba2;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+#oval2 {
+    transform: translateX(100px) rotate(-135deg);
+}
+#oval3 {
+    transform: rotate(-135deg) translateX(100px);
+}
+.transition-circle {
+    height: 150px;
+    width: 150px;
+    color: white;
+    background: #3b6064;
+    border-radius: 100px;
+    padding: 20px;
+    text-align: center;
+}
+.transition-circle:hover {
+    transform: scale(3);
+    color: #364958;
+    background-color: #c9e4ca;
+    transition-property: transform, color, background-color; 
+    transition-duration: 0.2s; 
+    transition-timing-function: ease-out;
+    transition-delay: 50ms;
+}
+.animation-box {
+    width: 150px;
+    height: 150px;
+    background-color: #55828b;
+    margin: 50px;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.animation-box:hover {
+  animation: changeColor 5s infinite, rotateBox 5s infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #364958;
+  }
+  100% {
+    background-color: #c9e4ca;
+  }
+}
+@keyframes rotateBox {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+   transform: rotate(-90deg);
+  }
+}
+
+.myCanvas {
+ border: solid 2px #364958;
 }

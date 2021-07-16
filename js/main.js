@@ -49,10 +49,6 @@ function make_list() {
     {
       label: "Final Project - Noisemaker App",
         url: "noisemaker/index.html"
-    }, 
-    {
-      label: "Sequencer Tutorial",
-        url: "sequencer/sequencer.html"
     }//, <--dont forget the comma in between array elements
   ]
   links.forEach((link)=> {
