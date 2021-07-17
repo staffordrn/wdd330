@@ -135,6 +135,10 @@ h2 {
     color: #fdfffc;
     margin: 23% auto;
   }
+  .menu-btn a {
+    padding: 20px;
+    font-size: 2em;
+  }
   .box {
     border: none;
     display: flex;
@@ -147,10 +151,13 @@ h2 {
     width: 300px;
     background-size: 150px;
   }
-  .title {
-    font-size: 2rem;
+  /* #menu-title {
     max-width: 80%;
     text-align: center;
+  } */
+  #menu-title h1 {
+    font-size: 5rem;
+    letter-spacing: 3px;
   }
   
 }
