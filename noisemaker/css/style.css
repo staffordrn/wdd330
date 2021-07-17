@@ -125,12 +125,46 @@ font-size: 2em;
   background-image: url("../buttons/button-teal.png");
   background-repeat: no-repeat;
 } */
-@media only screen and (min-width: 768px) {
+
+ @media only screen and (min-width:768px) and (max-width:799px) {
+  #container {
+    width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+  }
+  .box {
+    border: none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .btn {
+    height: 150px;
+    width: 150px;
+    background-size: 75px;
+    padding: 0;
+  }
+  .faveBtn {
+    margin: 10px;
+    font-size: 1.5em !important;
+    }
+  .title {
+    text-align: center;
+    font-size: 1.75em;
+    width: 70%;
+  }
+
+}
+@media only screen and (min-width: 800px) {
   #container {
     width: 80%;
     margin: 100px auto;
-    display: flex;
-    flex-flow: row wrap;
+    /* display: flex;
+    flex-flow: row wrap; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
   }
   .box {
     border: none;
@@ -143,8 +177,14 @@ font-size: 2em;
     height: 300px;
     width: 300px;
     background-size: 150px;
+    padding: 0;
   }
+  .faveBtn {
+    margin: 20px;
+    font-size: 2em !important;
+    }
   .title {
+    margin-top: -40px;
     font-size: 2rem;
     max-width: 80%;
     text-align: center;
