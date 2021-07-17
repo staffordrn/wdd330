@@ -1,22 +1,22 @@
 :root {
-  --orange: hsla(32, 100%, 50%, 1);
-  --yellow: hsla(49, 99%, 50%, 1);
-  --lime: hsla(82, 90%, 45%, 1);
-  --green: hsla(127, 81%, 41%, 1);
-  --red: hsla(342, 93%, 53%, 1);
-  --pink: hsla(314, 85%, 45%, 1);
-  --blue: hsla(211, 92%, 52%, 1);
-  --purple: hsla(283, 92%, 44%, 1);
-  --cyan: hsla(195, 98%, 55%, 1);
-  --white: hsla(0, 0%, 95%, 1);
-  --black: hsla(0, 0%, 10%, 1);
+  --orange: #ff9f1c;
+  --yellow: #faca0e;
+  --lime: #94C762;
+  --green: #2EC4B6;
+  --red: #E71D36;
+  --pink: #F28E99;
+  --blue: #2393C9;
+  --purple: #8B91B1;
+  --cyan: #96E2D9;
+  --white: #FDFFFC;
+  --black: #011627;
 
   /* abstract our colours */
-  --boxMain: var(--pink);
-  --boxSecond: var(--purple);
-  --boxHigh: var(--yellow);
-  --border: 1vmin solid var(--black);
-  --borderRad: 2px;
+  --boxMain: var(--orange);
+  --boxSecond: var(--green);
+  --boxHigh: var(--red);
+  --border: 1vmin solid var(--white);
+  --borderRad: 10px;
 }
 
 * {
@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--black);
   padding: 4vmax;
   font-family: sans-serif, system-ui;
   font-size: 120%;
@@ -109,7 +109,7 @@ h2 {
 }
 
 [data-playing="false"] {
-  background: var(--pink) url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="black" /></svg>') no-repeat center center;
+  background: var(--red) url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z" fill="black" /></svg>') no-repeat center center;
   background-size: 60% 60%;
   cursor: pointer;
 }

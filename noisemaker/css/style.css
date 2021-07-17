@@ -41,7 +41,6 @@ font-size: 2em;
 .ctrls {
   align-self: center;
   justify-content: center;
-  border: 2px solid green;
 }
 .ctrls p {
   padding: 0;
@@ -111,7 +110,7 @@ font-size: 2em;
 }
 
 .playing {
-  background-image: url("../buttons/button-red.png");
+  background-image: url("../buttons/button-teal.png");
   background-repeat: no-repeat;
   /* height: 300px;
   width: 300px;
@@ -122,10 +121,10 @@ font-size: 2em;
 .btn:hover, .faveToggle:hover, .faveBtn:hover, #heartBtn:hover {
   cursor: pointer;
 }
-.favorite {
+/* .favorite {
   background-image: url("../buttons/button-teal.png");
   background-repeat: no-repeat;
-}
+} */
 @media only screen and (min-width: 768px) {
   #container {
     width: 80%;

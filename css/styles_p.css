@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 body {
+    /* background-image:  linear-gradient(30deg, rgba(50, 0, 130, 0.75), #170042); */
+    background: #083D77;
     font-size: 16px;
+    color: rgba(255, 255, 255, 0.75);
     line-height: 32px;
-    font-family: Ubuntu, sans-serif;
-    color: #2e2e2e;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+   color: #ee964b;
+   
 }
 
 h1 {
@@ -24,6 +30,15 @@ header, main, footer {
     padding: .5rem;
     max-width: 75%;
 }
+nav {
+    display: flex;
+    justify-content: center;
+
+}
+nav a {
+    font-size: .75em;
+    padding: 10px;
+}
 .quiz-body {
     color: white;
     background: lightslategray;
@@ -32,8 +47,10 @@ header, main, footer {
     border-radius: 5px;
 }
 header, footer, footer a {
-    text-align: center;background-color: #364958;
-    color: whitesmoke;
+    text-align: center;
+    background-color: #EBEBD3;
+    color: #083D77;
+    border-radius: 5px;
 }
 footer {
     font-size: 1em;
@@ -43,9 +60,9 @@ footer {
 .transform-box {
     height: 150px;
     width: 150px;
-    background-color: #55828b;
+    background-color: #F4D35E;
     margin-bottom: 20px;
-    color: white;
+    color: #083D77;
     padding: 20px;
     text-align: center;
 }
@@ -65,10 +82,10 @@ footer {
 .transform-oval {
     height: 75px;
     width: 150px;
-    background-color: #87bba2;
+    background-color: #EE964B;
     border-radius: 50px;
     margin-bottom: 20px;
-    color: white;
+    color: #083D77;
     padding: 20px;
     text-align: center;
 }
@@ -81,16 +98,16 @@ footer {
 .transition-circle {
     height: 150px;
     width: 150px;
-    color: white;
-    background: #3b6064;
+    color: #083D77;
+    background: #F4D35E;
     border-radius: 100px;
     padding: 20px;
     text-align: center;
 }
 .transition-circle:hover {
     transform: scale(3);
-    color: #364958;
-    background-color: #c9e4ca;
+    color: #fff;
+    background-color: #F95738;
     transition-property: transform, color, background-color; 
     transition-duration: 0.2s; 
     transition-timing-function: ease-out;
@@ -99,9 +116,9 @@ footer {
 .animation-box {
     width: 150px;
     height: 150px;
-    background-color: #55828b;
+    background-color: #EBEBD3;
     margin: 50px;
-    color: white;
+    color: #083D77;
     padding: 20px;
     text-align: center;
 }
@@ -111,10 +128,10 @@ footer {
 
 @keyframes changeColor {
   0% {
-    background-color: #364958;
+    background-color: #EE964B;
   }
   100% {
-    background-color: #c9e4ca;
+    background-color: #083D77;;
   }
 }
 @keyframes rotateBox {
@@ -127,5 +144,5 @@ footer {
 }
 
 .myCanvas {
- border: solid 2px #364958;
+ border: solid 2px #EBEBD3;
 }
