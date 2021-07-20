@@ -105,7 +105,7 @@ font-size: 2em;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif; */
 }
-.faveToggle {
+.faveToggle, .allFaves {
   color: #e71d36; 
 }
 

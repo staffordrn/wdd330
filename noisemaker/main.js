@@ -7,10 +7,10 @@ import Favorite from "./favorites.js";
 const fave = new Favorite();
 // render the list with or without favorites
 const list = JSON.parse(localStorage.getItem("favoritesArray"));
-if (localStorage.getItem("favoritesArray") !== null) {
-  renderWithFavorites(list);
+if (list == null || list.length == 0) {
+  displayButtons();
 } else {
-  displayButtons(list);
+  renderWithFavorites(list);
 }
 //function to create the audio elements
 const element = document.getElementById('sound-list');
@@ -24,6 +24,7 @@ sounds.forEach(listCreate);
 
 //event listener for listing favorites only
 document.getElementById('heartBtn').addEventListener('click', event => {
+  heartBtn.classList.add('allFaves');
   fave.listFaves();
 });
 
@@ -44,7 +45,6 @@ Array.from(document.getElementsByClassName("faveBtn")).forEach(item => {
     const parentElement = event.target.parentElement;
     const sound = parentElement.dataset.sound;
     fave.addFavorites(element, sound);
-    //addHeart(element, sound);
   });
 });
 
@@ -121,3 +121,6 @@ function keyPress(e) {
     let k = e.keyCode;
     playing(k); 
 } */
+
+
+//localStorage.getItem("favoritesArray"

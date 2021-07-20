@@ -1,7 +1,7 @@
 import { sounds } from './model.js'
-
-//function for displayinh the buttons
-export function displayButtons(list) {
+const key = "favoritesArray";
+//function for displaying the buttons
+export function displayButtons() {
     const el = document.getElementById('container');
     sounds.forEach(buttonCreate);
     function buttonCreate(sound) {
@@ -26,6 +26,7 @@ export function displayButtons(list) {
 //function to render the favorites only
 export function renderAllFavorites(list) {
     const el = document.getElementById('container');
+    el.innerHTML = '';
     //get all favorites from localStorage
     list.forEach(btnCreate);
     function btnCreate(item) {
@@ -50,10 +51,21 @@ export function renderAllFavorites(list) {
         }
         
     }
+    document.getElementById("heartBtn").removeEventListener('click', event => {
+      let list = JSON.parse(localStorage.getItem(key));
+      renderAllFavorites(list);
+    });
+    document.getElementById("heartBtn").addEventListener('click', event => {
+      //heartBtn.classList.toggle('allFaves');
+      heartBtn.classList.remove('allFaves');
+      let list = JSON.parse(localStorage.getItem(key));
+      renderWithFavorites(list);
+    });
 }
     
 export function renderWithFavorites(list) {
     const el = document.getElementById('container');
+    el.innerHTML = '';
     //get all favorites from localStorage
     sounds.forEach(btnCreate);
     function btnCreate(sound) {
@@ -79,7 +91,16 @@ export function renderWithFavorites(list) {
             
         }
     }
-    
+    document.getElementById("heartBtn").removeEventListener('click', event => {
+      let list = JSON.parse(localStorage.getItem(key));
+      renderWithFavorites(list);
+    });
+    document.getElementById("heartBtn").addEventListener('click', event => {
+      //heartBtn.classList.toggle('allFaves');
+      heartBtn.classList.add('allFaves');
+      let list = JSON.parse(localStorage.getItem(key));
+      renderAllFavorites(list);
+    });
 }
 
     

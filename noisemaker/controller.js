@@ -6,8 +6,8 @@ import Favorite from "./favorites.js";
 const buttons = document.getElementsByClassName('btn');
 const pads = document.getElementsByTagName('audio');
 const fave = new Favorite();
-const fBtn = Array.from(document.getElementsByClassName("faveBtn"));
-const faved = Array.from(document.getElementsByClassName("faveToggle"));
+//const fBtn = Array.from(document.getElementsByClassName("faveBtn"));
+//const faved = Array.from(document.getElementsByClassName("faveToggle"));
 
 
 //Create audio context

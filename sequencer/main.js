@@ -236,47 +236,44 @@ function draw() {
 
 }    
 // when the sample has loaded allow play
-let loadingEl = document.querySelector('.loading');
+const loadingEl = document.querySelector('.loading');
 const playButton = document.querySelector('[data-playing]');
 let isPlaying = false;
 setupSample()
-    .then((sample) => {
-        loadingEl.style.display = 'none'; // remove loading screen
+  .then((sample) => {
+    loadingEl.style.display = 'none';
 
-        dtmf = sample; // to be used in our playSample function
+    dtmf = sample; // to be used in our playSample function
 
-        playButton.addEventListener('click', function() {
-            isPlaying = !isPlaying;
+    playButton.addEventListener('click', ev => {
+      isPlaying = !isPlaying;
 
-            if (isPlaying) { // start playing
+      if (isPlaying) { // start playing
 
-                // check if context is in suspended state (autoplay policy)
-                if (audioCtx.state === 'suspended') {
-                    audioCtx.resume();
-                }
+        // check if context is in suspended state (autoplay policy)
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
 
-                currentNote = 0;
-                nextNoteTime = audioCtx.currentTime;
-                scheduler(); // kick off scheduling
-                requestAnimationFrame(draw); // start the drawing loop.
-                this.dataset.playing = 'true';
-
-            } else {
-
-                window.clearTimeout(scheduler.timerID);
-                this.dataset.playing = 'false';
-
-            }
-        })
-    });
+        currentNote = 0;
+        nextNoteTime = audioCtx.currentTime;
+        scheduler(); // kick off scheduling
+        requestAnimationFrame(draw); // start the drawing loop.
+        ev.target.dataset.playing = 'true';
+      } else {
+        window.clearTimeout(timerID);
+        ev.target.dataset.playing = 'false';
+      }
+    })
+  });
 
 //Volume controls
 //declare variables
-const volumeControl = document.querySelector('#vol');
+/* const volumeControl = document.querySelector('#vol');
 const gainNode = audioCtx.createGain();
 //const source = audioCtx.
 audioCtx.connect(gainNode).connect(audioContext.destination);
 
 volumeControl.addEventListener('input', function() {
     gainNode.gain.value = this.value;
-}, false);
+}, false); */
